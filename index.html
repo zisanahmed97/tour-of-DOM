@@ -31,6 +31,12 @@
             <li class="posondo">burger</li>
             <li class="posondo">pizza</li>
         </ul>
+
+        <section id="deshnetar-section">
+            <h1>kire zisan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <span>vat khaba?</span> adipisicing elit. Praesentium vero ullam officiis <span>desh neta</span> labore molestias suscipit quam earum dolores qui ad.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit <span>valo lage na</span> necessitatibus voluptatem nihil accusamus tempore possimus quas ipsum dolorem mollitia? Inventore atque id ex quam ab ducimus modi? Odio, rem provident!</p>
+        </section>
     </main>
 <!-- /*script tag ta shob shomoy body tag er agea use korbo */ -->
     <script>
@@ -66,6 +72,21 @@
    for(const food of fvrtFoods){
     console.log(food.innerText);
    }
+
+
+   //query selector all
+   const selectAll = document.querySelectorAll('#deshnetar-section p span'); // eta select er shob value e dekhabe
+   console.log(selectAll);
+   for(const neta of selectAll){
+    console.log(neta.innerText);
+   }
+
+
+   //query selector
+   const justQuery = document.querySelector('#deshnetar-section p span'); // eta shudu select er frst value ta dekhabe
+   console.log(justQuery); 
+
+  
 
     </script>
     <script src="./js/hello.js"></script>
