@@ -14,10 +14,35 @@
     <main>
         <h1>this is DOM</h1>
         <p>doma dom dom dom</p>
+
+        <ul>
+            <li>Shafayet</li>
+            <li>Pagla jalali</li>
+            <li>Lalon band</li>
+            <li>Dom de re baba</li>
+        </ul>
     </main>
-<!-- <script> tag ta shob shomoy </body> tag er agea use korbo -->
+<!-- /*script tag ta shob shomoy body tag er agea use korbo */ -->
     <script>
-        console.log('hello DOM kemon aso');
+        // console.log('hello DOM kemon aso');
+        // document object model
+
+       const allLi = document.getElementsByTagName('li');
+    //    console.log(allLi);
+    for(const li of allLi){
+        // console.log(li);
+        console.log(li.innerText);
+    }
+
+    const allHeadings= document.getElementsByTagName('h1');
+//   console.log(allHeadings);
+  for(const head of allHeadings){
+    // console.log(head);
+    console.log(head.innerText);
+  }
+
+
+
     </script>
     <script src="./js/hello.js"></script>
 </body>
