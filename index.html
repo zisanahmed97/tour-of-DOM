@@ -6,6 +6,20 @@
     <title>Tour of DOM</title>
 
     <link rel="stylesheet" href="./style/style.css">
+
+
+    <style>
+        .bg-red{
+            background-color: chartreuse;
+        }
+        .big-font{
+            font-size: 3em;
+
+        }
+        .border{
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -87,6 +101,17 @@
    console.log(justQuery); 
 
   
+    const deshneta = document.getElementById('deshnetar-section');
+    // deshneta.style.color('red');
+    // deshneta.getAttribute('id');
+    deshneta.classList.add('bg-red');
+    deshneta.classList.add('big-font')
+    deshneta.classList.remove('big-font');
+    deshneta.classList.add('border')
+
+    deshneta.setAttribute('title','kire pagla')
+
+
 
     </script>
     <script src="./js/hello.js"></script>
