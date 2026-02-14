@@ -21,6 +21,16 @@
             <li>Lalon band</li>
             <li>Dom de re baba</li>
         </ul>
+         
+        <ul>
+            <li>vaat</li>
+            <li id="moja">daal</li>
+            <li class="posondo">biriyani</li>
+            <li class="posondo">kabab</li>
+            <li class="posondo">kacchi</li>
+            <li class="posondo">burger</li>
+            <li class="posondo">pizza</li>
+        </ul>
     </main>
 <!-- /*script tag ta shob shomoy body tag er agea use korbo */ -->
     <script>
@@ -34,6 +44,8 @@
         console.log(li.innerText);
     }
 
+    //getElementsByTagName
+
     const allHeadings= document.getElementsByTagName('h1');
 //   console.log(allHeadings);
   for(const head of allHeadings){
@@ -41,7 +53,19 @@
     console.log(head.innerText);
   }
 
+    //get element by id
+      const mojarkhabar = document.getElementById('moja') ;
+    //   console.log(mojarkhabar);
 
+    mojarkhabar.innerText='dal diye alu vorta'
+
+
+    //get elements by class name
+
+  const fvrtFoods = document.getElementsByClassName('posondo');
+   for(const food of fvrtFoods){
+    console.log(food.innerText);
+   }
 
     </script>
     <script src="./js/hello.js"></script>
